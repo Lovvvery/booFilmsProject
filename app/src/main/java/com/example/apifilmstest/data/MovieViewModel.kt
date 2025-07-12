@@ -1,7 +1,10 @@
-package com.example.apifilmstest
+package com.example.apifilmstest.data
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.apifilmstest.api.themoviedb.entity.Movie
+import com.example.apifilmstest.api.themoviedb.entity.MovieDetail
+import com.example.apifilmstest.api.themoviedb.MovieRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch

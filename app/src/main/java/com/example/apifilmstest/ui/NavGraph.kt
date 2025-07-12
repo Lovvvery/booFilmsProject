@@ -1,9 +1,12 @@
-package com.example.apifilmstest
+package com.example.apifilmstest.ui
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.apifilmstest.data.MovieViewModel
+import com.example.apifilmstest.ui.screen.DetailScreen
+import com.example.apifilmstest.ui.screen.MainScreen
 
 @Composable
 fun NavGraph(startDestination: String = "main", viewModel: MovieViewModel) {

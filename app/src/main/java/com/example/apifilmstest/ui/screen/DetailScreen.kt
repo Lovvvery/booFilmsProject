@@ -1,4 +1,4 @@
-package com.example.apifilmstest
+package com.example.apifilmstest.ui.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -18,21 +18,19 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberAsyncImagePainter
 import androidx.compose.runtime.*
-import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
-import androidx.compose.ui.*
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
-import coil.compose.rememberAsyncImagePainter
+import com.example.apifilmstest.data.MovieViewModel
+import com.example.apifilmstest.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -63,7 +61,8 @@ fun DetailScreen(movieId: Int, viewModel: MovieViewModel, navController: NavCont
                         modifier = Modifier.offset(x = (-8).dp, y = (-18).dp)
                     ) {
                         IconButton(onClick = { navController.popBackStack() }) {
-                            Icon(Icons.Filled.ArrowBack, contentDescription = "Назад",
+                            Icon(
+                                Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Назад",
                                 tint = Color.LightGray)
                         }
                     }

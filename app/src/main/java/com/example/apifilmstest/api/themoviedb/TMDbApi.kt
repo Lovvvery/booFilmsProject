@@ -1,5 +1,7 @@
-package com.example.apifilmstest
+package com.example.apifilmstest.api.themoviedb
 
+import com.example.apifilmstest.api.themoviedb.entity.MovieDetail
+import com.example.apifilmstest.api.themoviedb.entity.MovieResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

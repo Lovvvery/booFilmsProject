@@ -1,4 +1,4 @@
-package com.example.apifilmstest
+package com.example.apifilmstest.api.themoviedb.entity
 
 data class MovieResponse(val results: List<Movie>)
 

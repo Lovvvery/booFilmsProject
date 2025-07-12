@@ -1,4 +1,4 @@
-package com.example.apifilmstest
+package com.example.apifilmstest.api.themoviedb
 
 class MovieRepository(private val api: TMDbApi) {
     suspend fun getPopularMovies(apiKey: String) = api.getPopularMovies(apiKey)
